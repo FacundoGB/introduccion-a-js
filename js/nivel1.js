@@ -40,6 +40,8 @@
 
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
 
+// alert('Hola, Mundo');
+console.log("Hola, Mundo");
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
 // Una vez que recargás la página, ya no debería aparecer más.
@@ -47,7 +49,7 @@
 
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
 
-
+console.log('Hola, Mundo2')
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
 //      Windows.
 
@@ -101,7 +103,8 @@
 */
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
-
+let numeroUno;
+let numeroDos;
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -115,6 +118,10 @@
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
 
+let nombre = "Facundo";
+let edad = 25;
+
+// alert("Nombre: " + nombre + "; edad: " + edad);
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
@@ -150,9 +157,12 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
-
+/* const pi = 3.14;
+alert(pi); */
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
+//pi = "hola";
+//alert("new pi: " + pi);
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
 // que los alerts no aparezcan cada vez, y para que los errores no hagan que el programa se detenga.
@@ -183,7 +193,11 @@
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
-
+/* let diez = 10;
+let tres = 3;
+let resultadoMultiplicacion = diez * tres;
+alert(resultadoMultiplicacion);
+ */
 /*
     Funciones
     =========
@@ -240,9 +254,25 @@
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
 
+function sumar(numero1, numero2) {
+    return numero1 + numero2;
+}
+
+// alert(sumar(15,10)); 
+
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
+
+// let numero1 = 5;
+// let numero2 = 1;
+
+
+function restar(numero1, numero2) {
+    return numero1 - numero2;
+}
+
+// alert(restar(numero1, numero2));
 
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
@@ -327,6 +357,17 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
+const operador = "*";
+let num1 = 6;
+let num2 = 2;
+
+// if (operador !== "+") {
+//     alert("se ejecuta una resta: " + restar(num1, num2));
+// } else {
+//     alert("se ejecuta una suma: " + sumar(num1, num2));
+// }
+
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
 
@@ -360,6 +401,12 @@
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
+function dividir(numero1, numero2) {
+    return (numero1/numero2);
+}
+function multiplicar(numero1, numero2) {
+    return (numero1*numero2);
+}
 
 
 
@@ -371,7 +418,15 @@
 //       else console.log - "Perdón, no conozco ese operador".
 
 
-
+if (operador === "+") {
+    alert("se ejecuta una suma: " + sumar(num1, num2));
+} else if (operador === "-") {
+    alert("se ejecuta una resta: " + restar(num1, num2));
+} else if (operador === "/") {
+    alert("se ejecuta una division: " + dividir(num1, num2));
+} else if (operador === "*") {
+    alert("se ejecuta una multiplicacion: " + multiplicar(num1, num2));
+}
 
 
 /*
@@ -400,7 +455,7 @@
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
-
+// hecho arriba en el primer ejemplo de if
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //
