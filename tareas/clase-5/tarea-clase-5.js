@@ -20,26 +20,19 @@ $botonCalcular.onclick = function()
 //TAREA: completar tareas/clase-5/index.html para que incluya tarea-clase-5.js
 //TAREA: crear un formulario donde un usuario pueda ingresar su salario anual.
 //cuando el usuario haga click en el botón "calcular", mostrar el salario mensual
+
+
+let btn = document.querySelector('button');
+
+function calcularSalarioMensual() {
+  let salarioAnual = document.getElementById("salario-anual").value;
+  let salarioMensual = Math.floor(salarioAnual/12);
+  document.getElementById("salario-mensual").value = salarioMensual;
+}
+
+btn.addEventListener('click', calcularSalarioMensual);
+
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
-
-//TAREA: En otro archivo html (no Index) y otro archivo js (no tarea-clase-5.js),
-// creá un formulario que capture el primer nombre, segundo nombre, apellido/s y edad del usuario
-// también vamos a crear un <h1> que diga Bienvenido!
-// vas a crear un botón de acción que una vez que lo apretás, va a
-// mostrar toda la información junta en un campo de texto
-// Y va a cambiar el <h1> para decir "Bienvenido, nombreDeUsuario"!
-
-/*
-Ejemplo form:
-  <form id="entrada-bar" onsubmit="return false;">
-    <input type="text" placeholder="Ingresá tu nombre" id="nombre-usuario"/>
-    <input type="number" placeholder="Ingresá tu edad" id="edad-usuario" />
-    <input type="submit" value="Ingresar" id="ingresar"/>
-  </form>
-
-  <div id="resultado">Hola</div>
-*
-* */
 
 //TAREA: En otro archivo distinto,
 // Por cada clase de r/argentina programa existente, vamos a pedir:
