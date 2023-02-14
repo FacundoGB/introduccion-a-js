@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#buttons button {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+
+}
+
+#reload {
+    background-color: lightseagreen;  
+}
+
+#img-reload {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.grupo-familiar {
+    display: flex;
+    flex-direction: row;
+    gap: 20xp;
+
+}
+
+.grupo-familiar > #name1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.grupo-familiar > #name2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.grupo-familiar > #name3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.general-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    width: 900px;
+    height: 400px;
+}
